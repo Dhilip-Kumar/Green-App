@@ -1,0 +1,51 @@
+
+<div class="logo">
+	
+	<img src="resources/images/login/logo.png" height="25%" width="70%" alt=logo>
+
+</div>
+
+<form name="LoginForm" novalidate>
+	
+	<p class="text-error" ng-show="isVisibile"> {{errorMsg}}</p>
+	<input type="text" class="username" id="username" ng-model="username" name="username" ng-change="FormDataCheck()" ng-minlength="5" placeholder="Username" required="" autofocus=""><br>
+	<input type="password" class="password" id="password" ng-model="password" name="password" ng-change="FormDataCheck()" ng-minlength="5" placeholder="Password" required=""><br>
+
+	<div class="middle">
+   
+		<p>Remember Me
+		<img ng-src="{{RememberMeImgUrl}}" ng-click="toggleImage1()" alt="remember" align="right" height="10%" width="10%" ></p>
+ 
+		<p>Accept Out Terms of Use
+		<img ng-src="{{AcceptTerms}}" ng-click="toggleImage2()" alt="switch" align="right" height="10%" width="10%"> </p> 
+   
+		<button class="login_button"  ng-click="validateUser()" ng-disabled="LoginForm.username.$invalid || LoginForm.password.$invalid">Login</button>
+		
+		<h5 class="forgotpwd"><a href="http:">Forgot Your Password?</a></h5>
+		
+			<div class="icons">
+				
+				<div class="icon1">
+					
+					<img src="resources/images/login/web_link_01.png" alt="web">
+					
+				</div>
+				
+				<div class="icon2">
+				
+					<img src="resources/images/login/privacy_link.png" alt="privacy" >
+				
+				</div>
+				
+				<div class="clear">
+				
+					<p class="icon1">View website</p>   
+					<p class="icon2">privacy/legal/terms</p>
+				
+				</div>
+				
+			</div>
+     </div>
+	 
+	     
+</form>

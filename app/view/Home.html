@@ -1,0 +1,97 @@
+
+<div class="home">
+
+	<p style="text-align:center">Home</p>
+	<img ng-src="resources/images/home/menu_list.png" ng-click="hamburger_menu()" alt="menu" class="menu">
+
+</div>
+
+<div class="cover">
+
+</div>
+
+<div ng-hide="ham_menu" class="hamburger_menu">
+
+	<ul>
+		
+		<li ng-click="home()"><img ng-src="resources/images/menu-screen/home-icon.png">Home</li>
+		<li ng-click="new_business()"><img ng-src="resources/images/menu-screen/business-icon.png">New Business</li>
+		<li><img ng-src="resources/images/menu-screen/commission-icon.png">Commissions</li>
+		<li><img ng-src="resources/images/menu-screen/incentive-icon.png">Incentives</li>
+		<li><img ng-src="resources/images/menu-screen/newslist-icon.png">AgentNews</li>
+		<li><img ng-src="resources/images/menu-screen/qustion_icon.png">Questions and Support</li>
+		<li ng-click="logout()"><img ng-src="resources/images/menu-screen/logout-icon.png">Logout</li>
+	
+	</ul>
+	
+</div>
+
+<div class="name">
+
+	<h4>Hello {{user}}</h4>
+	<p>{{date | date:'longDate'}}</p>
+	<p style="float:right">{{date | date:'hh:mm a'}}</p>
+	
+</div>
+
+<table style="width:100%">
+		
+	<tr>
+		
+		<td style="width:50%">
+		
+			<div class="LeftAlign">
+			
+				<img ng-src="resources/images/home/new_business_icon.png" ng-click="business()">
+				<h6>NewBusiness</h6>
+			
+			</div>
+		
+		</td>
+		
+		<td style="width:50%">
+		
+			<div class="RightAlign">
+		
+				<img src="resources/images/home/commission_icon.png">
+				<h6>Comissions</h6>
+		
+			</div>
+		
+		</td>
+		
+	</tr>
+		
+	<tr>
+		
+		<td>
+			
+			<div class="LeftAlign">
+		
+				<img src="resources/images/home/incentives_icon_old.png">
+				<h6>Incentives</h6>
+		
+			</div>
+		
+		</td>
+		
+		<td>
+		
+			<div class="RightAlign">
+		
+				<img src="resources/images/home/agent_news.png">
+				<h6>Agent News</h6>
+			
+			</div>
+		
+		</td>
+		
+	</tr>
+		
+</table>
+
+<div class="logout" ng-click="logout()">
+
+	<img src="resources/images/home/logout_icon.png" alt="hi" style="width:20px;height:20px"> Logout
+	
+</div>

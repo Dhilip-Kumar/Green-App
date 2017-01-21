@@ -1,0 +1,31 @@
+<form name="EditForm" class="form-Edit" novalidate>
+    <table  class="table borderless">
+        <tbody>
+            <tr>
+                <td rowspan="2">
+                    <img src="resources/images/profile.jpg" alt=""/>
+                </td>
+                <td>
+                    <label class="label">First Name</label>
+                    <input ng-change="" type="text" ng-model="editData.firstName" class="form-control" name="firstName" required="" autofocus="" />
+                </td>
+                <td>
+                    <label class="label">Last Name</label>
+                    <input ng-change="" type="text" ng-model="editData.lastName" class="form-control" name="lastName" required="" autofocus="" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="label">Age</label>
+                    <input ng-change="" type="text" ng-model="editData.age" class="form-control" name="Age" required="" autofocus="" />
+                </td>
+                <td>
+                    <label class="label">Email</label>
+                    <input ng-change="" type="text" ng-model="editData.email" class="form-control" name="Email" required="" autofocus="" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button ng-click="saveData()" class="btn btn-lg btn-primary btn-block save-btn" type="button" ng-disabled="edit.firstName.$invalid && edit.lastName.$invalid && edit.age.$invalid && edit.age.$invalid">Save</button>
+    <button  ng-click="goHome()" class="btn btn-lg btn-primary btn-block home-btn" type="button">Back</button>
+</form>

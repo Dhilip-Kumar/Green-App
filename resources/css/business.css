@@ -1,0 +1,38 @@
+.main_body{
+
+	background-color:#eeeeee;
+	padding:5px;
+	height:588px;
+}
+
+.main_body>p{
+
+	font-size:18px;
+}
+
+.list{
+
+	background-color:white;
+	margin-top:5px;
+	padding:10px;
+}
+
+.filter_body{
+
+	background-color:#eeeeee;
+	padding:5px;
+}
+
+.details{
+
+	background-color:white;
+	padding:10px;
+	line-height:242%;
+}
+
+.foot{
+
+	background-color:#eeeeee;
+	width:100%;
+		
+}

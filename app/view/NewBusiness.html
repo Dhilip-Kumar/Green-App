@@ -1,0 +1,64 @@
+<div class="head">
+
+	<table style="width:100%">
+	
+		<td><img ng-src="resources/images/back-btn.png" ng-click="home()" height=15px width=15px>Home</td>
+		<td style="padding-left:60px">New Business</td>
+		<td style="text-align:right"><img ng-src="resources/images/home/menu_list.png" ng-click="hamburger_menu()" height=20px width=35px alt="menu" ></td>
+	
+	</table>
+	
+</div>
+
+<div ng-hide="ham_menu" class="hamburger_menu">
+
+	<ul>
+		
+		<li ng-click="home()"><img ng-src="resources/images/menu-screen/home-icon.png">Home</li>
+		<li ng-click="new_business()"><img ng-src="resources/images/menu-screen/business-icon.png">New Business</li>
+		<li><img ng-src="resources/images/menu-screen/commission-icon.png">Commissions</li>
+		<li><img ng-src="resources/images/menu-screen/incentive-icon.png">Incentives</li>
+		<li><img ng-src="resources/images/menu-screen/newslist-icon.png">AgentNews</li>
+		<li><img ng-src="resources/images/menu-screen/qustion_icon.png">Questions and Support</li>
+		<li ng-click="logout()"><img ng-src="resources/images/menu-screen/logout-icon.png">Logout</li>
+	
+	</ul>
+	
+</div>
+
+<div class="main_body">
+
+	<h6>Last Updated on 07/21/2014</h6>
+	<p>Policy Status</p>
+	
+	<select style="height:40px;width:100%">
+		
+		<option value="Show All">Show All</option>
+		
+	
+	</select><br>
+	
+	<br><p>Annitant/Insured Name</p>
+	
+	<input type="text" ng-model="insuredname" name="insuredname"  ng-minlength="5" placeholder="Enter Annuitant/Insured Name" required="" style="height:40px;width:100%"><br>
+	
+	<br><p>Action Required</p>
+	
+	<select style="height:40px;width:100%">
+		
+		<option value="Show All">Show All</option>
+	
+	</select><br>
+	
+	<br><button class="login_button" ng-click="search()">Search</button><br><br>
+	
+	<p>Recent Searches</p>
+	
+	<h5>Stephen,Fleming</h5>
+	<h5>Kumar,Sangakkara</h5>
+	<h5>Rahul,Dravid</h5>
+	<h5>Virat,Kohli</h5>
+	<h5>Anil,Kumble</h5>
+	
+	
+</div>

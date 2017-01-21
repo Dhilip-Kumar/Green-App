@@ -1,0 +1,116 @@
+.container{
+
+	background-image: url("../images/login/login_bg.png");
+	background-repeat: no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;
+    margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+}
+
+.logo{
+
+	background-color:green;
+	text-align:center;
+	opacity:0.7;
+	margin-bottom:12%;
+}
+
+.text-error{
+
+	color:red;
+	text-align:center;
+	width:100%;
+}
+
+.username{
+
+	background-image: url("../images/login/user-icon.png");
+    background-repeat: no-repeat;
+    margin: 1% 10% 0% 10%;
+    padding: 8px 0px 8px 25px;
+    width: 80%;
+    font-size: 17px;
+    background-size: 15px 20px;
+    background-position: 5px;
+    border: 1px solid #cdcdcd;
+	border-radius: 15px;
+}
+
+.password{
+        
+	background-image: url("../images/login/password-icon.png") ;
+	background-repeat: no-repeat;
+    margin: 3% 10% 0% 10%;
+	padding: 8px 0px 8px 25px;
+	width: 80%;
+	font-size: 17px;
+	background-size: 15px 20px;
+	background-position: 5px;
+	border-radius: 15px;
+}
+
+.middle{
+
+	margin-top:2%;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+.login_button{
+
+	width:100%;
+	height:40px;
+	background-color:green;
+	color:white;
+	opacity:0.9;
+	border-radius: 20px;
+}
+
+.middle>p{
+
+	padding-bottom:3%;
+	font-size:16px;
+	font-family:Times New Roman;
+}
+
+
+a {
+    color: black;
+}
+
+.forgotpwd{
+
+	color:white;
+	text-align:center;
+	margin-top:20px;
+}
+
+.icons{
+
+	margin-left:15%;
+	margin-right:15%;
+	margin-top:5%;
+	color:white;
+}
+
+.icon1{
+
+	display:inline-block;
+}
+
+.icon2{
+
+	display:inline-block;
+	float:right;
+}
+
+.clear{
+
+	clear:right;
+}
+
