@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="UTF-8">
+            <title>National Life Insurance</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+                
+					<!-- style scripts -->
+				    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
+					<link rel="stylesheet" type="text/css" href="resources/css/app.css">
+					<link rel="stylesheet" type="text/css" href="resources/css/login.css" >
+					<link rel="stylesheet" type="text/css" href="resources/css/home.css" >
+					<link rel="stylesheet" type="text/css" href="resources/css/business.css" >
+					
+                    <!-- application scripts -->
+                    <script type="text/javascript" src="resources/js/lib/angular.min.js"></script>
+                    <script type="text/javascript" src="resources/js/lib/angular-route.min.js"></script>
+                        
+                    <!-- Controllers-->
+                    <script type="text/javascript" src="app.js"></script>
+                    <script type="text/javascript" src="app/controller/MainController.js"></script>
+					<script type="text/javascript" src="app/controller/loginController.js"></script>
+                    <script type="text/javascript" src="app/controller/homeController.js"></script>
+					<script type="text/javascript" src="app/controller/businessController.js"></script>
+					<script type="text/javascript" src="app/controller/filterController.js"></script>
+					<script type="text/javascript" src="app/controller/detailsController.js"></script>
+					
+					<!--Services-->
+					<script type="text/javascript" src="app/services/utilservice.js"></script>
+    </head>
+                    
+		<body class="container" ng-controller="MainController" >
+                    
+				<div ng-view></div>
+                    
+		</body>
+                
+</html>
